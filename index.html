@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="default">
+
+    <div class="app">
+        <header>
+            <h1>Weather</h1>
+            <div class="toggles">
+                <button id="unitToggle">°F</button>
+            </div>
+        </header>
+
+        <div class="search">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city..."
+                autocomplete="off"
+            />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <ul id="suggestions" class="suggestions hidden"></ul>
+
+        <div id="loader" class="loader hidden"></div>
+        <div id="error" class="error"></div>
+
+        <div id="weatherCard" class="card hidden"></div>
+
+        <div class="history">
+            <h3>Recent Searches</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
